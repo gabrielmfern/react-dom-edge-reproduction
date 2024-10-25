@@ -1,11 +1,10 @@
 import React from 'react';
-import { AppleReceiptEmail } from '../../../../emails/apple-receipt';
-import { render } from '../../../lib/render';
+import { render } from '../../lib/render';
 
 export const runtime = 'edge';
 
 export async function GET() {
-  const html = await render(<AppleReceiptEmail />);
+  const html = await render(<div>Hello world!</div>);
 
   return new Response(html, {
     headers: {
