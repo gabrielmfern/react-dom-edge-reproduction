@@ -1,6 +1,6 @@
 import React from 'react';
 import { AppleReceiptEmail } from '../../../../emails/apple-receipt';
-import { render } from '../../../lib/render/src/browser';
+import { render } from '../../../lib/render';
 
 export const runtime = 'edge';
 
